@@ -58,7 +58,7 @@ changeTitles[0].addEventListener('dblclick', function(event){
 event.target.textContent = "BUS TO HELL!!!";
 
 
-setTimeout(function() {   // sets timelimit then resets 
+setTimeout(function() {   
     event.target.textContent = "Welcome To Fun Bus!";
   }, 900);
 }, false);
@@ -90,4 +90,16 @@ setTimeout(function() {
     }, 500);    
     }, false);
 
+
+// mouseover on images 
+
+const imagesFlip = document.querySelector('.content-destination img')
+
+imagesFlip.addEventListener('mouseover', (event) => {
+    event.target.src = "https://images.unsplash.com/photo-1586345634653-dee580cf1332?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=974&q=80"
+
+    setTimeout(function() {
+        event.target.src = "https://images.unsplash.com/photo-1543005472-1b1d37fa4eae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80";    
+        }, 500);    
+        }, false);
 
